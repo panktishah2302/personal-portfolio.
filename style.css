@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar styles */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #1F2544;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+
+}
+
+.right-section {
+    display: flex;
+}
+
+.navBar a {
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navBar a:hover {
+    font-size: 26px;
+
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+
+}
+
+.download-cv {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+
+
+.fa-file-arrow-down {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.dark-mode-switch {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.dark-mode-switch i {
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+
+/* Home section styles */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#474F7A ;
+    
+}
+
+.mainIntro {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.intro {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.img-container {
+    flex: 1;
+}
+
+.img-container img {
+    width: 60%;
+    border-radius: 8px;
+    /* Optional: Add border-radius to the image */
+}
+
+.mainIntro h1 {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: #535C91;
+    display: inline;
+    background-color: #070F2B;
+    font-family: 'Poppins', sans-serif;
+    /* Change the font family as needed */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    letter-spacing: 2px;
+    /* Adjust letter spacing as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle text shado w */
+    text-align: center;
+}
+
+
+.welcome-message {
+    font-size: 1.2em;
+    color: #333333;
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* Hide overflow for the typing animation effect */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .title {
+    color: #555555;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .tagline {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.tagline li {
+    list-style: none;
+    color: #FFD0EC;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.tagline li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.tagline li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #474F7A;
+    border-left: 2px solid #535C91;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.download-link1 {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1F2544;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#about.background-pattern {
+    background: linear-gradient(to right, #556789, #232323),
+                url('path/to/pattern.png');
+    background-repeat: repeat;
+}
+
+.about-container {
+    margin: 0 auto;
+    padding: 40px; /* Add some padding for better spacing */
+    background-color: #FFFFFF; /* Set background color for the container */
+    border-radius: 10px; /* Add border radius for a softer look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.about-container h2 {
+    font-size: 2.5rem;
+    color: #1F2544;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    transition: opacity 0.5s;
+}
+
+.about-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.about-container .left-animation {
+    animation: fadeInLeft 1s forwards, slideInLeft 1s forwards;
+}
+
+.about-container .right-animation {
+    animation: fadeInRight 1s forwards, slideInRight 1s forwards;
+}
+
+.img-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.wrapper {
+    display: flex;
+}
+
+.about-container .profile-image1 {
+    width: 40%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    transition: opacity 0.5s;
+    margin-top: 20px;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container h2,
+.text-container p {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#projects {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line */
+    justify-content: space-between; /* Distribute space between projects */
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+.project:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.section-title {
+    color: #1F2544;
+    font-size: 51px;
+    text-align: center;
+}
+
+.project p {
+    color: #555;
+}
+
+.project-links a {
+    display: inline-block;
+    background-color: #1F2544;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: #ff7e5f;
+}
+
+.project.parallax {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 20px 20px 0;
+    width: 500px;
+}
+
+.project.parallax h3,
+.project.parallax h4 {
+    color: #1F2544;
+    font-size: 24px;
+}
+
+.project.parallax p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.skills-list li {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.skills-list span {
+    font-size: 16px;
+}
+
+#contact {
+    background-color: #1F2544;
+    padding: 60px 0;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-container h2 {
+    color: #FFFFFF; /* Adjusted to white for better visibility */
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-container p {
+    color: #ccc; /* Adjusted to a lighter color for better contrast */
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .email-option {
+    margin-right: 30px;
+    font-size: 24px;
+  }
+  
+  .email-option i {
+    color: #FFFFFF; /* Adjusted to white for better visibility */
+    margin-right: 10px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    color: #FFFFFF; /* Adjusted to white for better visibility */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+
+  .email-option a{
+    display: inline-block;
+    color: #FFFFFF; /* Adjusted to white for better visibility */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #ff7e5f;
+  }
+  
+  .contact-container p:last-child {
+    margin-top: 20px;
+    font-style: italic;
+    color: #ccc; /* Adjusted to a lighter color for better contrast */
+  }
+  
+  /* Animation for social links */
+  .social-links a {
+    opacity: 0.8;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  
+/* Hover Effects */
+.navBar a:hover {
+    color: #ff7e5f; /* Change the hover color as desired */
+}
+
+
+
+/* Background Patterns */
+#home {
+    color: #fff;
+    padding: 40px;
+}
+
+#about {
+    background: repeating-linear-gradient(
+        45deg,
+        #f0f0f0,
+        #f0f0f0 10px,
+        #e0e0e0 10px,
+        #e0e0e0 20px
+    );
+    color: #1F2544;
+    padding: 40px;
+}
+
+
+
+/* Dark/Light Mode Switch */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .navBar {
+    background-color: #333;
+}
+
+.dark-mode a {
+    color: #fff;
+}
+
+.dark-mode #home,
+.dark-mode #about,
+.dark-mode #projects,
+.dark-mode #contact {
+    background: linear-gradient(45deg, #333, #666);
+    color: #fff;
+}
+
+
+
+
+
+/* Dark mode switch styles */
+.dark-mode-switch {
+    font-size: 24px; /* Set the icon size as needed */
+    cursor: pointer;
+    color: #fff; /* Set the color for the icon */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a; /* Set the dark mode background color */
+    color: #fff; /* Set the dark mode text color */
+}
+
+/* Add any additional dark mode styles here */
