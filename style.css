@@ -84,13 +84,7 @@ body {
     font-size: 20px;
 }
 
-.dark-mode-switch {
-    margin-right: 10px; /* Adjust the margin as needed */
-}
 
-.dark-mode-switch i {
-    font-size: 24px; /* Adjust the font size as needed */
-}
 
 
 /* Home section styles */
@@ -98,8 +92,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#474F7A ;
-    
+    background-color: #474F7A;
+
 }
 
 .mainIntro {
@@ -115,7 +109,7 @@ body {
 
 .intro {
     flex: 1;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .img-container {
@@ -137,13 +131,9 @@ body {
     display: inline;
     background-color: #070F2B;
     font-family: 'Poppins', sans-serif;
-    /* Change the font family as needed */
     text-transform: uppercase;
-    /* Convert text to uppercase */
     letter-spacing: 2px;
-    /* Adjust letter spacing as needed */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add a subtle text shado w */
     text-align: center;
 }
 
@@ -231,18 +221,21 @@ body {
     transition: background-color 0.3s ease;
 }
 
+
+
+
 #about.background-pattern {
     background: linear-gradient(to right, #556789, #232323),
-                url('path/to/pattern.png');
+        url('path/to/pattern.png');
     background-repeat: repeat;
 }
 
 .about-container {
     margin: 0 auto;
-    padding: 40px; /* Add some padding for better spacing */
-    background-color: #FFFFFF; /* Set background color for the container */
-    border-radius: 10px; /* Add border radius for a softer look */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .about-container h2 {
@@ -290,6 +283,7 @@ body {
     from {
         transform: translateX(-20px);
     }
+
     to {
         transform: translateX(0);
     }
@@ -305,6 +299,7 @@ body {
     from {
         transform: translateX(20px);
     }
+
     to {
         transform: translateX(0);
     }
@@ -349,8 +344,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap; /* Allow projects to wrap to the next line */
-    justify-content: space-between; /* Distribute space between projects */
+    flex-wrap: wrap;
+    /* Allow projects to wrap to the next line */
+    justify-content: space-between;
+    /* Distribute space between projects */
 }
 
 .project {
@@ -360,7 +357,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     width: calc(33.33% - 20px);
-    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    margin-bottom: 20px;
+    /* Add margin at the bottom for spacing */
 }
 
 .project:hover {
@@ -390,7 +388,7 @@ body {
 }
 
 .project-links a:hover {
-    background-color: #ff7e5f;
+    /* background-color:; */
 }
 
 .project.parallax {
@@ -449,146 +447,242 @@ body {
 #contact {
     background-color: #1F2544;
     padding: 60px 0;
-  }
-  
-  .contact-container {
+}
+
+.contact-container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .contact-container h2 {
-    color: #FFFFFF; /* Adjusted to white for better visibility */
+}
+
+.contact-container h2 {
+    color: #FFFFFF;
+    /* Adjusted to white for better visibility */
     font-size: 36px;
     margin-bottom: 20px;
-  }
-  
-  .contact-container p {
-    color: #ccc; /* Adjusted to a lighter color for better contrast */
+}
+
+.contact-container p {
+    color: #ccc;
+    /* Adjusted to a lighter color for better contrast */
     font-size: 18px;
     margin-bottom: 30px;
-  }
-  
-  .contact-options {
+}
+
+.contact-options {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .email-option {
+}
+
+.email-option {
     margin-right: 30px;
     font-size: 24px;
-  }
-  
-  .email-option i {
-    color: #FFFFFF; /* Adjusted to white for better visibility */
-    margin-right: 10px;
-  }
-  
-  .social-links a {
-    display: inline-block;
-    color: #FFFFFF; /* Adjusted to white for better visibility */
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 24px;
-    transition: color 0.3s ease;
-  }
+}
 
-  .email-option a{
+.email-option i {
+    color: #FFFFFF;
+    /* Adjusted to white for better visibility */
+    margin-right: 10px;
+}
+
+.social-links a {
     display: inline-block;
-    color: #FFFFFF; /* Adjusted to white for better visibility */
+    color: #FFFFFF;
+    /* Adjusted to white for better visibility */
     text-decoration: none;
     margin-right: 20px;
     font-size: 24px;
     transition: color 0.3s ease;
-  }
-  
-  .social-links a:hover {
-    color: #ff7e5f;
-  }
-  
-  .contact-container p:last-child {
+}
+
+.email-option a {
+    display: inline-block;
+    color: #FFFFFF;
+    /* Adjusted to white for better visibility */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.email-option a:hover {
+    font-size: 30px;
+
+}
+
+.social-links a:hover {
+    font-size: 30px;
+
+}
+
+.contact-container p:last-child {
     margin-top: 20px;
     font-style: italic;
-    color: #ccc; /* Adjusted to a lighter color for better contrast */
-  }
-  
-  /* Animation for social links */
-  .social-links a {
+    color: #ccc;
+    /* Adjusted to a lighter color for better contrast */
+}
+
+/* Animation for social links */
+.social-links a {
     opacity: 0.8;
     transform: translateY(0);
     transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .social-links a:hover {
+}
+
+.social-links a:hover {
     opacity: 1;
     transform: translateY(-5px);
-  }
-  
-/* Hover Effects */
-.navBar a:hover {
-    color: #ff7e5f; /* Change the hover color as desired */
+}
+
+@media only screen and (max-width: 767px) {
+    .navBar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .left-section {
+        margin-bottom: 10px;
+    }
+
+    .navCenter {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navRight {
+        margin-top: 10px;
+        display: none;
+    }
+
+    .navBar a {
+        font-size: 18px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .navBar a:hover {
+        font-size: 20px;
+    }
+
+    .download-cv {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+
+}
+
+/* Home section styles for small screens */
+@media only screen and (max-width: 767px) {
+    #home {
+        padding: 20px;
+    }
+
+    .mainIntro {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .img-container img {
+        width: 80%;
+        /* Adjust image width */
+        border-radius: 50%;
+        /* Add border-radius for a circular image */
+    }
+
+    .mainIntro .welcome-message {
+        font-size: 1.5em;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .mainIntro .title {
+        display: none;
+        /* Hide the title */
+    }
+
+    .tagline {
+        display: none;
+        /* Hide the tagline */
+    }
+
+    .download-link1 {
+        font-size: 18px;
+    }
+
+    .title .tagline {
+        font-size: 16px;
+        /* Adjust font size for tagline */
+        margin-top: 10px;
+        /* Adjust margin */
+    }
+
+    /* Tagline Animation for small screens */
+    @keyframes slideSmallScreen {
+        100% {
+            top: -240px;
+        }
+    }
+
+    .tagline li {
+        font-size: 16px;
+        /* Change this value to your desired font size */
+        animation: slideSmallScreen 12s steps(4) infinite;
+    }
 }
 
 
 
-/* Background Patterns */
-#home {
-    color: #fff;
-    padding: 40px;
+@media screen and (max-width: 1345px) {
+    .img-container1 {
+        display: none;
+        /* Hide the image container on small screens */
+    }
+
+    .text-container {
+        width: 100%;
+        /* Make the text container take full width on small screens */
+    }
+
+    .about-container h2,
+    .about-container p {
+        opacity: 1;
+        margin-bottom: 15px;
+    }
 }
 
-#about {
-    background: repeating-linear-gradient(
-        45deg,
-        #f0f0f0,
-        #f0f0f0 10px,
-        #e0e0e0 10px,
-        #e0e0e0 20px
-    );
-    color: #1F2544;
-    padding: 40px;
+@media screen and (max-width: 767px) {
+    .contact-options {
+        flex-direction: column;
+        /* Adjust to a vertical layout on small screens */
+        align-items: center;
+    }
 }
 
+@media screen and (max-width: 767px) {
+    .contact-options {
+        flex-direction: column;
+        /* Adjust to a vertical layout on small screens */
+        align-items: center;
+    }
 
+    .email-option {
+        margin-right: 0;
+        /* Remove margin on small screens */
+    }
 
-/* Dark/Light Mode Switch */
-body.dark-mode {
-    background-color: #333;
-    color: #fff;
+    .email-option a,
+    .social-links a {
+        font-size: 20px;
+        /* Adjust font size for small screens */
+    }
+
+    .contact-container p {
+        font-size: 14px;
+        /* Adjust font size for small screens */
+    }
 }
-
-.dark-mode .navBar {
-    background-color: #333;
-}
-
-.dark-mode a {
-    color: #fff;
-}
-
-.dark-mode #home,
-.dark-mode #about,
-.dark-mode #projects,
-.dark-mode #contact {
-    background: linear-gradient(45deg, #333, #666);
-    color: #fff;
-}
-
-
-
-
-
-/* Dark mode switch styles */
-.dark-mode-switch {
-    font-size: 24px; /* Set the icon size as needed */
-    cursor: pointer;
-    color: #fff; /* Set the color for the icon */
-}
-
-/* Dark mode styles */
-body.dark-mode {
-    background-color: #1a1a1a; /* Set the dark mode background color */
-    color: #fff; /* Set the dark mode text color */
-}
-
-/* Add any additional dark mode styles here */
